@@ -1,10 +1,11 @@
 @import "variables";
+@import "grid";
 
 @mixin navStyles{
     width: 100%;
     height: 60px;
     padding: 12px;
-    display: inline-block;
+    display: inline;
     float: left;
     // overflow: auto;
 }
@@ -19,7 +20,8 @@
 
 *{
 	box-sizing: border-box;
-
+	padding: 0;
+	margin: 0;
 }
 
 body{
@@ -31,7 +33,13 @@ body{
 	width: 100%;
 	padding: 0 auto;
 	height: 50px;
-	display: inline-block;
+	display: inline;
+}
+
+#wbsLogo{
+	background-color: $white;
+	margin: 3px;
+	max-width: 50px;
 }
 
 .topNav{
@@ -39,6 +47,7 @@ body{
     background-color: $secondaryColour;
     @include clear;
     
+
     ul{
     	float: left;
         li{
@@ -59,12 +68,19 @@ body{
             }
         }
     }
+    
+}
+#hamburgerIcon{
+	background-color: $white;
+	margin: 3px;
+	max-width: 20px;
 }
 
 @media screen and (max-width: 480px){
 	ul {
 		display: none;
 	}
+	//offset 6 columns? & 3 colums each for logo & hamburger menu?
 	#hamburgerIcon{
 // ADD DROP-DOWN MENU WITH LINKS TO CHILD PAGES
 	}
@@ -97,21 +113,15 @@ nav{
 		font-family: $primaryFont;
 		text-transform: uppercase;
 		display: inline-block;
+		text-decoration: none;
 		font-size: 20px;
 
 	}
 }
 
-.wbsLogo{
-	background-color: $white;
-	padding: 3px;
-}
 
-.hamburgerIcon{
-	background-color: $white;
-	padding: 3px;
 
-}
+
 
 
 
