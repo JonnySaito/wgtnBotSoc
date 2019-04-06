@@ -1,7 +1,119 @@
-$primaryColor: #C5DFAB;
+@import "variables";
 
-$secondaryColor: #71A706;
+@mixin navStyles{
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    display: inline-block;
+    float: left;
+    // overflow: auto;
+}
+
+@mixin clear{
+    &:after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+*{
+	box-sizing: border-box;
+
+}
 
 body{
-	background-color: $primaryColor;
+	width: 100%;
+    background-color: $primaryColour;
 }
+
+.header{
+	width: 100%;
+	padding: 0 auto;
+	height: 50px;
+	display: inline-block;
+}
+
+.topNav{
+    @include navStyles;
+    background-color: $secondaryColour;
+    @include clear;
+    
+    ul{
+    	float: left;
+        li{
+        	float: left;
+        	list-style: none;
+            width: 200px;
+            font-family: $primaryFont;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            a{
+                color: black;
+                a:hover { 
+  				color: #8ED2C9;
+				}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+	ul {
+		display: none;
+	}
+	#hamburgerIcon{
+// ADD DROP-DOWN MENU WITH LINKS TO CHILD PAGES
+	}
+}
+
+@media screen and (min-width: 480px){
+	#hamburgerIcon {
+		display: none;
+	}
+}
+
+body{
+	background-color: $primaryColour;
+}
+
+header{
+	width: 100%;
+	margin: 0 auto;
+	background-color: $secondaryColour;
+}
+
+nav{
+	ul {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	li{
+		font-family: $primaryFont;
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 20px;
+
+	}
+}
+
+.wbsLogo{
+	background-color: $white;
+	padding: 3px;
+}
+
+.hamburgerIcon{
+	background-color: $white;
+	padding: 3px;
+
+}
+
+
+
+
+
