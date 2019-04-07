@@ -1,14 +1,11 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 @import "variables";
 @import "grid";
-
-@mixin navStyles{
-    width: 100%;
-    height: 60px;
-    padding: 6px;
-    display: inline-block;
-    float: left;
-    // overflow: auto;
-}
 
 @mixin clear{
     &:after{
@@ -18,12 +15,6 @@
     }
 }
 
-*{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 body{
 	width: 100%;
     background-color: $primaryColour;
@@ -31,78 +22,108 @@ body{
 
 .header-container{
     width: 100%;
-	margin: 0 auto;
-	padding: 0 auto;
-	height: 60px;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	background-color: $secondaryColour;
-	height: 60px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-content: space-between;
-    border-bottom: 1px solid red;
-    padding: 0;
-    @include clear;
-}
+	@include clear;
+	.wbsLogo{
+		width: 10%;
+		float: left;
+		padding: 6px;
+		a{
+			img{
+				width: 100%;
+				display: block;
+			}
+		}
+	}
 
-.wbsLogo{
-	margin: 0;
+	.topNav{
+	    width: 90%;
+	    padding: 6px;
+	    background-color: $secondaryColour;
+	    float: left;
+	    display: inline-block;
+	    @include clear;
+	    ul{
+	        li{
+	        	float: left;
+	        	list-style: none;
+	            width: 20%;
+	            font-family: $primaryFont;
+	            font-weight: bold;
+	            text-transform: uppercase;
+	            text-align: center;
+	            a{
+	                color: black;
+	                text-decoration: none;
+	                a:hover { 
+	  				color: #8ED2C9;
+					}
+	            }
+	        }
+	    }
+	    .icon{
+	    	display: none;
+	    }	    
+	}
+
+	#hamburgerIcon{
+	background-color: $secondaryColour;
+	color: black;
+	padding: 6px;
 	width: 10%;
 	height: 100%;
+	float:right;
+	}
 }
 
-.topNav{
-    @include navStyles;
-    background-color: $secondaryColour;
-    @include clear;
-    
-
-    ul{
-    	float: left;
-    	display: inline-block;
-        li{
-        	float: left;
-        	list-style: none;
-            width: 200px;
-            font-family: $primaryFont;
-            font-size: 2.5vw;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-
-            a{
-                color: black;
-                a:hover { 
-  				color: #8ED2C9;
-				}
-            }
-        }
-    }
-    
-}
-
-#hamburgerIcon{
-	background-color: $secondaryColour;
-	margin: 3px;
-	width: 15%;
+.active {
+  background-color:$secondaryColour;
+  color: white;
 }
 
 @media screen and (max-width: 600px){
-	.topNav{
-		display: none;
-	}
-	//offset 6 columns? & 3 colums each for logo & hamburger menu?
-	#hamburgerIcon{
-// ADD DROP-DOWN MENU WITH LINKS TO CHILD PAGES
-	}
+  .topNav a:not(:first-child) {
+  	display: none;
+  }
+  .topNav a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-@media screen and (min-width: 600px){
-	#hamburgerIcon {
-		display: none;
-	}
+@media screen and (max-width: 600px){
+  .topNav.responsive {
+  	position: relative;
+  }
+  .topNav.responsive .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
+
+// @media screen and (max-width: 600px){
+// 	.topNav{
+// 		display: none;
+// 	}
+	
+// 	#hamburgerIcon{
+// // ADD ONCLICK FUNCTION FOR DROP-DOWN MENU WITH LINKS TO CHILD PAGES
+// 	}
+// }
+
+// @media screen and (min-width: 600px){
+// 	#hamburgerIcon {
+// 		display: none;
+// 	}
+// }
 
 
 
