@@ -387,15 +387,13 @@
 /* line 18, ../scss/style.scss */
 body {
   width: 100%;
-  background-color: #CBD1C5;
+  background-color: #E0E0E0;
 }
 
 /* line 23, ../scss/style.scss */
 .header-container {
   width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #899B66;
+  background-color: #86C232;
 }
 /* line 11, ../scss/style.scss */
 .header-container:after {
@@ -403,101 +401,60 @@ body {
   content: "";
   display: block;
 }
+
 /* line 29, ../scss/style.scss */
-.header-container .wbsLogo {
-  width: 10%;
+.wbsLogo {
+  width: 18%;
   float: left;
-  padding: 6px;
+  padding: 0px;
+  margin: 0;
 }
-/* line 34, ../scss/style.scss */
-.header-container .wbsLogo a img {
+/* line 35, ../scss/style.scss */
+.wbsLogo a img {
   width: 100%;
   display: block;
 }
-/* line 41, ../scss/style.scss */
-.header-container .topNav {
-  width: 90%;
-  padding: 6px;
-  background-color: #899B66;
-  float: left;
-  display: inline-block;
+
+/* line 42, ../scss/style.scss */
+.topNav {
+  background-color: #86C232;
+  clear: both;
+  min-height: 15px;
+  padding: 10px;
+}
+/* line 47, ../scss/style.scss */
+.topNav ul {
+  list-style: none;
+  display: block;
+}
+/* line 50, ../scss/style.scss */
+.topNav ul li {
+  margin-right: 20px;
+}
+/* line 52, ../scss/style.scss */
+.topNav ul li a {
+  font-family: "Century Gothic";
+  color: #222629;
+  text-decoration: none;
+  font-weight: bold;
 }
 /* line 11, ../scss/style.scss */
-.header-container .topNav:after {
+.topNav::after:after {
   clear: both;
   content: "";
   display: block;
 }
-/* line 49, ../scss/style.scss */
-.header-container .topNav ul li {
-  float: left;
-  list-style: none;
-  width: 20%;
-  font-family: "Century Gothic";
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-/* line 57, ../scss/style.scss */
-.header-container .topNav ul li a {
-  color: black;
-  text-decoration: none;
-}
-/* line 60, ../scss/style.scss */
-.header-container .topNav ul li a a:hover {
-  color: #8ED2C9;
-}
-/* line 66, ../scss/style.scss */
-.header-container .topNav .icon {
+
+/* line 65, ../scss/style.scss */
+.topNav .hidden {
   display: none;
 }
+
 /* line 71, ../scss/style.scss */
-.header-container #hamburgerIcon {
-  background-color: #899B66;
-  color: black;
-  padding: 6px;
-  width: 10%;
-  height: 100%;
+#hamburgerIcon {
   float: right;
-}
-
-/* line 81, ../scss/style.scss */
-.active {
-  background-color: #899B66;
-  color: white;
-}
-
-@media screen and (max-width: 600px) {
-  /* line 87, ../scss/style.scss */
-  .topNav a:not(:first-child) {
-    display: none;
-  }
-
-  /* line 90, ../scss/style.scss */
-  .topNav a.icon {
-    float: right;
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  /* line 97, ../scss/style.scss */
-  .topNav.responsive {
-    position: relative;
-  }
-
-  /* line 100, ../scss/style.scss */
-  .topNav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  /* line 105, ../scss/style.scss */
-  .topNav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+  padding: 10px;
+  color: #222629;
 }
 
 /*# sourceMappingURL=style.css.map */
