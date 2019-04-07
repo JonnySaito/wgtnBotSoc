@@ -4,18 +4,21 @@
 	<title>Wellington BotSoc</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" type="image/png" href="images/wbsFavicon.ico">
 </head>
+
 <body>
-	<header>
-		<div class="row header">			
-			<div class="col2" id="wbsLogo">
-				<img src="images/wbsLogo.png">
+	<header class="header-container">
+		<!-- <div class="row header"> -->			
+			<div class="wbsLogo"> <!-- class="col2" -->	
+				<a href="index.html" title="WBS home page">
+					<img src="images/wbsLogo.png">
+				</a>
 			</div>
 
-			<div class="col10 topNav">
-				<ul>
+			<div class="topNav"> <!-- class="col10" -->
+				<ul id="navItems">
 				  <li><a href="index.html">Home</a></li> 
 				  <li><a href="wbsMeetings.html">Meetings</a></li>
 				  <li><a href="wbsMembership.html">Membership</a></li>
@@ -24,11 +27,11 @@
 				</ul>
 			</div>
 <!-- USE MEDIA QUERIES TO HIDE UL FOR MOBILE & HIDE HAMBURGER FOR TABLET & DESKTOP -->
-			<div class="col2" id="hamburgerIcon"> 
+			<div id="hamburgerIcon"> <!-- class="col2" -->
 				<img src="images/navIcons/hamburgerIcon.png">
 			</div>
 			
-		</div>
+		<!-- </div> -->
 		
 	</header>
 

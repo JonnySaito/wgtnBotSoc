@@ -4,8 +4,8 @@
 @mixin navStyles{
     width: 100%;
     height: 60px;
-    padding: 12px;
-    display: inline;
+    padding: 6px;
+    display: inline-block;
     float: left;
     // overflow: auto;
 }
@@ -29,17 +29,27 @@ body{
     background-color: $primaryColour;
 }
 
-.header{
-	width: 100%;
+.header-container{
+    width: 100%;
+	margin: 0 auto;
 	padding: 0 auto;
-	height: 50px;
-	display: inline;
+	height: 60px;
+	display: inline-block;
+	background-color: $secondaryColour;
+	height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    border-bottom: 1px solid red;
+    padding: 0;
+    @include clear;
 }
 
-#wbsLogo{
-	background-color: $white;
-	margin: 3px;
-	max-width: 50px;
+.wbsLogo{
+	margin: 0;
+	width: 10%;
+	height: 100%;
 }
 
 .topNav{
@@ -50,12 +60,13 @@ body{
 
     ul{
     	float: left;
+    	display: inline-block;
         li{
         	float: left;
         	list-style: none;
             width: 200px;
             font-family: $primaryFont;
-            font-size: 20px;
+            font-size: 2.5vw;
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
@@ -70,14 +81,15 @@ body{
     }
     
 }
+
 #hamburgerIcon{
-	background-color: $white;
+	background-color: $secondaryColour;
 	margin: 3px;
-	max-width: 20px;
+	width: 15%;
 }
 
-@media screen and (max-width: 480px){
-	ul {
+@media screen and (max-width: 600px){
+	.topNav{
 		display: none;
 	}
 	//offset 6 columns? & 3 colums each for logo & hamburger menu?
@@ -86,40 +98,11 @@ body{
 	}
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 600px){
 	#hamburgerIcon {
 		display: none;
 	}
 }
-
-body{
-	background-color: $primaryColour;
-}
-
-header{
-	width: 100%;
-	margin: 0 auto;
-	background-color: $secondaryColour;
-}
-
-nav{
-	ul {
-	  list-style: none;
-	  margin: 0;
-	  padding: 0;
-	}
-
-	li{
-		font-family: $primaryFont;
-		text-transform: uppercase;
-		display: inline-block;
-		text-decoration: none;
-		font-size: 20px;
-
-	}
-}
-
-
 
 
 

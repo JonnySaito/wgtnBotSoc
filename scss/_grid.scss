@@ -13,7 +13,6 @@ $lgWidth: 1200px;
     }
 }
 
-
 .col{
     float: left;
     padding: 0px 15px;
@@ -29,9 +28,6 @@ $lgWidth: 1200px;
     }
 }
 
-
-
-
 @media (min-width: $mdWidth) {
     @for $i from 1 through $columns{
         .colM#{$i}{
@@ -43,8 +39,6 @@ $lgWidth: 1200px;
         }
     }
 }
-
-
 
 
 @media (min-width: $lgWidth) {
