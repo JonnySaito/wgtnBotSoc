@@ -53,6 +53,7 @@ body{
     			font-family: $primaryFont;
     			color: $black;
     			text-decoration: none;
+    			text-transform: uppercase;
     			font-weight: bold; 	
 			}
 		}
@@ -62,17 +63,20 @@ body{
 	}    
 }
 
-.topNav .hidden{
-	display: none;
-}
-
-
-
 #hamburgerIcon{
     float: right;
     padding:10px;
     color: $black;
+    width: 15%;
 }
+
+// .topNav .hidden{
+// 	display: none;
+// }
+
+// .menuIcon{
+// 	font-size: 20px;
+// }
 
 
 // @media screen and (max-width: 600px){
