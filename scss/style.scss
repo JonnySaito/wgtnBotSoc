@@ -13,7 +13,7 @@
         content: "";
         display: block;
     }
-}
+} 
 
 body{
 	width: 100%;
@@ -22,21 +22,29 @@ body{
 
 .header-container{
     width: 100%;
+    height: 75px;
 	background-color: $secondaryColour;
 	@include clear;
 }
 
 .wbsLogo{
-	width: 18%;
+	width: 80px;
+	height: 100%;
+	background-color: white;
 	float: left;
-	padding: 0px;
+	padding: 2px 2px 0px;
 	margin: 0;
 	a{
 		img{
 			width: 100%;
-			display: block;
+			height: 100%;	
 		}
 	}
+}
+
+#wbsLogo{
+	width: 100%;
+	display: block;
 }
 
 .topNav{
@@ -63,20 +71,29 @@ body{
 	}    
 }
 
-#hamburgerIcon{
-    float: right;
-    padding:10px;
-    color: $black;
-    width: 15%;
+// #hamburgerIcon{
+//     float: right;
+//     padding:10px;
+//     color: $black;
+//     width: 15%;
+// }
+
+#navIcon{
+	width: 80px;
+	height: 100%;
+	float: right;
+	margin-right: 10px;
+	&:hover{
+        	color: $white;
+	}
 }
 
-// .topNav .hidden{
-// 	display: none;
-// }
+#menuIcon{
+	width: 80px;
+	height: 100%;
+	margin-right: 30px;
+}
 
-// .menuIcon{
-// 	font-size: 20px;
-// }
 
 
 // @media screen and (max-width: 600px){
@@ -101,105 +118,116 @@ body{
 //     	}    
 // 	}
 // }
-// @media screen and (max-width: 600px){
-// 	.topNav{
-// 		display: none;
-// 	}
-	
-// 	#hamburgerIcon{
-// // ADD ONCLICK FUNCTION FOR DROP-DOWN MENU WITH LINKS TO CHILD PAGES
-// 	}
+@media only screen and (max-width: 600px){
+	.topNav{
+		display: none;
+	}
+} 
+
+// @media screen and (max-width: 468px){
+// 	.wbsLogo {
+// 		width: 94px;
+// 		height: 64px;
+// 		}
 // }
 
-// @media screen and (min-width: 600px){
-// 	#hamburgerIcon {
-// 		display: none;
-// 	}
-// }
+@media only screen and (min-width: 600px){
+	#hamburgerIcon {
+		display: none;
+		}
+	// HEADER FOR DESKTOP
+
+	// .header-container{
+	//     width: 100%;
+	// 	display: flex;
+	// 	align-items: center;
+		
+	// 	@include clear;
+	// 	.wbsLogo{
+	// 		width: 120px;
+	// 		height: 82px;
+	// 		float: left;
+	// 		padding: 2px;
+	// 		a{
+	// 			img{
+	// 				width: 100%;
+	// 				display: block;
+	// 			}
+	// 		}
+	// 	}
+
+		.topNav{
+		    display: block;
+		    background: red;
+		    width: 90%;
+		    padding: 6px;
+		    background-color: $secondaryColour;
+		    float: left;
+		    @include clear;
+		    
+		    ul{
+		    	display: inline;
+		    	justify-content: space-between;
+		        li{
+		        	float: left;
+		        	list-style: none;
+		            font-family: $primaryFont;
+		            font-weight: bold;
+		            text-transform: uppercase;
+		            text-align: center;
+		            display: inline;
+		            a{
+		                color: black;
+		                text-decoration: none;
+		                a:hover { 
+		  				color: #8ED2C9;
+						}
+		            }
+		        }
+		    }
+		}
+	}
 
 
+		//     .icon{
+		//     	display: none;
+		//     }	    
+		// }
 
+		// .active {
+		//   background-color:$secondaryColour;
+		//   color: white;
+		// }
 
-// HEADER FOR DESKTOP
+		// @media screen and (max-width: 600px){
+		//   .topNav a:not(:first-child) {
+		//   	display: none;
+		//   }
+		//   .topNav a.icon {
+		//     float: right;
+		//     display: block;
+		//   }
+		// }
 
-// .header-container{
-//     width: 100%;
-// 	display: flex;
-// 	align-items: center;
-// 	background-color: $secondaryColour;
-// 	@include clear;
-// 	.wbsLogo{
-// 		width: 10%;
-// 		float: left;
-// 		padding: 6px;
-// 		a{
-// 			img{
-// 				width: 100%;
-// 				display: block;
-// 			}
+		// @media screen and (max-width: 600px){
+		//   .topNav .responsive {
+		//   	position: relative;
+		//   }
+		//   .topNav .responsive .icon{
+		//     position: absolute;
+		//     right: 0;
+		//     top: 0;
+		//   }
+		//   .topNav .responsive a {
+		//     float: none;
+		//     display: block;
+		//     text-align: left;
+// 		//   }
 // 		}
 // 	}
-
-// 	.topNav{
-// 	    width: 90%;
-// 	    padding: 6px;
-// 	    background-color: $secondaryColour;
-// 	    float: left;
-// 	    @include clear;
-	    
-// 	    ul{
-// 	    	display: flex;
-// 	    	justify-content: space-between;
-// 	        li{
-// 	        	float: left;
-// 	        	list-style: none;
-// 	            // width: 20%;
-// 	            font-family: $primaryFont;
-// 	            font-weight: bold;
-// 	            text-transform: uppercase;
-// 	            text-align: center;
-// 	            a{
-// 	                color: black;
-// 	                text-decoration: none;
-// 	                a:hover { 
-// 	  				color: #8ED2C9;
-// 					}
-// 	            }
-// 	        }
-// 	    }
-// 	    .icon{
-// 	    	display: none;
-// 	    }	    
-// 	}
-
-// 	.active {
-// 	  background-color:$secondaryColour;
-// 	  color: white;
-// 	}
-
-// 	@media screen and (max-width: 600px){
-// 	  .topNav a:not(:first-child) {
-// 	  	display: none;
-// 	  }
-// 	  .topNav a.icon {
-// 	    float: right;
-// 	    display: block;
-// 	  }
-// 	}
-
-// 	@media screen and (max-width: 600px){
-// 	  .topNav .responsive {
-// 	  	position: relative;
-// 	  }
-// 	  .topNav .responsive .icon{
-// 	    position: absolute;
-// 	    right: 0;
-// 	    top: 0;
-// 	  }
-// 	  .topNav .responsive a {
-// 	    float: none;
-// 	    display: block;
-// 	    text-align: left;
-// 	  }
-// 	}
 // }
+// }
+
+
+
+
