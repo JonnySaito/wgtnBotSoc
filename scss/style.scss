@@ -63,17 +63,54 @@ img{
 	}
 }
 
+
 #mainImage{
 	height: 400px;
 	width: 100%;
-	background-image: url("../images/mainImage.jpg");
+	background-image: url("../images/mainImage.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	text-align: center;
 }
 
 
 
+#headings{
+	clear: both;
+}
+
+
+h1, h3{
+	font-family: $primaryFont;
+	color: $white;
+	text-align: center;
+	padding: 40px ;
+}
+
+#topHeading{
+	font-size: 10vw;
+}
+
+#subHeading{
+	font-size: 3.5vw;
+}
+
+#introBox{
+	display: block;
+	background-color: $white;
+	width: 80%;
+	border: 1px solid $black;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 6px;
+	
+	p{
+		font-family: $primaryFont;
+		text-align: center;
+	}
+}
 
 
 

@@ -272,10 +272,39 @@ img {
 #mainImage {
   height: 400px;
   width: 100%;
-  background-image: url("../images/mainImage.jpg");
+  background-image: url("../images/mainImage.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  text-align: center; }
+
+#headings {
+  clear: both; }
+
+h1, h3 {
+  font-family: "Century Gothic";
+  color: #EDF5E1;
+  text-align: center;
+  padding: 40px; }
+
+#topHeading {
+  font-size: 10vw; }
+
+#subHeading {
+  font-size: 3.5vw; }
+
+#introBox {
+  display: block;
+  background-color: #EDF5E1;
+  width: 80%;
+  border: 1px solid #222629;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 6px; }
+  #introBox p {
+    font-family: "Century Gothic";
+    text-align: center; }
 
 @media only screen and (min-width: 600px) {
   .headerContainer {
