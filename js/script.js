@@ -1,8 +1,8 @@
 //FUNCTION FOR DROP-DOWN MENU
 // $("#myTopnav").hide();
 $(document).ready(function(){
-  $("#hamburgerIcon").click(function(){
-    $("#myTopnav").toggle();
+  $("#hamburger").click(function(){
+    $("#links").toggle();
   });
 });
 
