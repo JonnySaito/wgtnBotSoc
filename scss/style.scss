@@ -34,9 +34,10 @@ img{
 	#logo{
 		float: left;
 		width: 80px;
-		background-color: $white;
+		background-color: $secondaryColour;
 		img{
 			display: block;
+			padding: 5%;
 		}
 	}
 	#hamburger{
@@ -70,7 +71,7 @@ img{
 #mainImage{
 	height: 300px;
 	width: 100%;
-	background-image: url("../images/mainImage.png");
+	background-image: url("../images/mainImage.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -133,42 +134,48 @@ h1, h2, h3{
 	p{
 		font-family: $primaryFont;
 		text-align: center;
+		font-size: 1.25em;
 	}
 }
 
 #middleSection{
 	clear: both;
-	margin-bottom: 15px;
+	// margin-bottom: 15px;
 	a{
 		text-decoration: none;
 		color: $black;
 		text-transform: uppercase;
 	}
+	.midSection{
+		padding-bottom: 20px;
+	}
 	.midIcons{
-	height: 200px;
-	width: 200px;
+	height: 100px;
+	width: 100px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10px;
 	}
 	p{
+		display: none;
 		font-family: $secondaryFont;
 		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
 
-
 .footerContainer{
-	border-top: 1px solid $white;
+	padding-top: 10px;
 	clear: both;
 	margin: 0 auto;
-	background-color: #afafaf;
+	background-color: $primaryColour;
+	padding-bottom: 20px;
 	a{
 		text-decoration: none;
 		color: $black;
 	}
 }
-
 
 
 #facebookLink{
@@ -178,26 +185,14 @@ h1, h2, h3{
 }
 
 
-// @media only screen and (max-width: $mdWidth){
-// 	#otherSections{
-// 		display: none;
-// 	}
-// 	.midIcons{
-// 		width: 65%;
-// 	}
-// }
-
 @media only screen and (min-width: $mdWidth){
 	.headerContainer{
 		display: flex;
 		#logo{
-			padding: 5%;
 			width: 10%;
-			background-color: $white;
 			img{
 				display: block !important;
 			}
-			// NOT DISPLAYING LOGO AFTER 600 BREAK
 		}
 		#hamburger{
 			display: none;
@@ -214,35 +209,64 @@ h1, h2, h3{
 					&:hover{
 						a{
 							color: white;
-						}
-						
+						}	
 					}
 				}
 			}
 		}
 	}
+
 	#mainImage{
 		height: 500px;
 		}
-		h1, h3{
-		padding: 40px ;
-	}
-	p{
-		font-size: 1.25em;
-	}
+		// h1, h3{
+		// padding: 40px ;
+		// }
+	
+	
 	#memberJoin, #downloadNews{
 	font-size: 1.2em;
 	}
+	
+	#introBox{
+		p{
+		font-weight: bold;
+		}
+	}
 
+	#middleSection p{
+		display: block;
+	}
+
+	.footerContainer{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		#downloadNews{
+			order:1;
+		}
+		#memberJoin{
+			align-items: center;
+			order:3;
+		}
+		#facebookLink{
+			padding-top: 10px;
+			order: 2;
+
+		}
+	}
 }
 
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: $lgWidth){
 	#topHeading{
 		font-size: 8vw;
+		padding: 40px;
 	}
 	#subHeading{
 		font-size: 2.5vw;
+		padding: 40px;
 	}
 }
 
