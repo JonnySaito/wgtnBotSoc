@@ -18,6 +18,7 @@
 body{
 	width: 100%;
     background-color: $primaryColour;
+    max-width: 1200px;
 }
 
 img{
@@ -32,6 +33,7 @@ img{
 	#logo{
 		float: left;
 		width: 80px;
+		background-color: $white;
 		img{
 			display: block;
 		}
@@ -65,7 +67,7 @@ img{
 
 
 #mainImage{
-	height: 400px;
+	height: 300px;
 	width: 100%;
 	background-image: url("../images/mainImage.png");
 	background-size: cover;
@@ -81,22 +83,24 @@ img{
 }
 
 
-h1, h3{
+h1, h2, h3{
 	font-family: $primaryFont;
-	color: $white;
 	text-align: center;
-	padding: 40px ;
 }
 
 #topHeading{
 	font-size: 10vw;
+	color: $white;
+	padding: 20px;
 }
 
 #subHeading{
 	font-size: 3.5vw;
+	color: $white;
+	padding: 20px;
 }
 
-#introBox{
+.textBox{
 	display: block;
 	background-color: $white;
 	width: 80%;
@@ -104,12 +108,33 @@ h1, h3{
 	border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 20px;
-	padding: 6px;
-	
+	padding: 8px;
+}
+
+#introBox{
 	p{
 		font-family: $primaryFont;
 		text-align: center;
 	}
+}
+
+#middleSection{
+	clear: both;
+	margin-bottom: 15px;
+	a{
+		text-decoration: none;
+		color: $black;
+	}
+}
+
+#meetingIcon{
+	width: 25vw;
+	height: 25vw;
+	margin: auto;
+}
+
+#meetingTitle{
+	text-transform: uppercase;
 }
 
 
@@ -120,13 +145,35 @@ h1, h3{
 
 
 
+.footerContainer{
+	border-top: 1px solid $white;
+	clear: both;
+	margin: 0 auto;
+	a{
+		text-decoration: none;
+		color: $black;
+	}
+}
 
+// #downloadNews{
+// 	a{
+// 		text-decoration: none;
+// 		color: $black;
+// 	}
+// }
 
+#facebookLink{
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+}
 
-
-
-
-
+// #memberJoin{
+// 	a{
+// 		text-decoration: none;
+// 		color: $black;
+// 	}
+// }
 
 @media only screen and (min-width: 600px){
 	.headerContainer{
@@ -148,7 +195,6 @@ h1, h3{
 				align-items: center;
 				height: 100%;
 				li{
-
 					&:hover{
 						a{
 							color: white;
@@ -160,17 +206,25 @@ h1, h3{
 		}
 	}
 	#mainImage{
-		height: 600px;
+		height: 500px;
+		}
+		h1, h3{
+		padding: 40px ;
+	}
+	p{
+		font-size: 1.25em;
 	}
 }
 
 
-
-
-
-
-
-
+@media only screen and (min-width: 1000px){
+	#topHeading{
+		font-size: 8vw;
+	}
+	#subHeading{
+		font-size: 2.5vw;
+	}
+}
 
 
 
