@@ -19,6 +19,7 @@ body{
 	width: 100%;
     background-color: $primaryColour;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 img{
@@ -76,7 +77,15 @@ img{
 	text-align: center;
 }
 
-
+#newsImage{
+	height: 300px;
+	width: 100%;
+	background-image: url("../images/ladyReading.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
 
 #headings{
 	clear: both;
@@ -124,24 +133,17 @@ h1, h2, h3{
 	a{
 		text-decoration: none;
 		color: $black;
+		text-transform: uppercase;
+	}
+	.midIcons{
+	margin: 0 auto;
+	padding: 20px;
+	}
+	p{
+		font-family: $secondaryFont;
+		text-align: center;
 	}
 }
-
-#meetingIcon{
-	width: 25vw;
-	height: 25vw;
-	margin: auto;
-}
-
-#meetingTitle{
-	text-transform: uppercase;
-}
-
-
-
-
-
-
 
 
 
@@ -155,12 +157,6 @@ h1, h2, h3{
 	}
 }
 
-// #downloadNews{
-// 	a{
-// 		text-decoration: none;
-// 		color: $black;
-// 	}
-// }
 
 #facebookLink{
 	display: block;
@@ -168,18 +164,21 @@ h1, h2, h3{
 	width: 20%;
 }
 
-// #memberJoin{
-// 	a{
-// 		text-decoration: none;
-// 		color: $black;
-// 	}
-// }
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: $mdWidth){
+	#otherSections{
+		display: none;
+	}
+	.midIcons{
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: $mdWidth){
 	.headerContainer{
 		display: flex;
 		#logo{
-			padding: 10px;
+			padding: 5%x;
 			width: 10%;
 			background-color: white;
 		}
