@@ -78,13 +78,12 @@ img{
 }
 
 #newsImage{
-	height: 300px;
+	min-height: 274px;
 	width: 100%;
 	background-image: url("../images/ladyReading.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	text-align: center;
 }
 
 #headings{
@@ -111,13 +110,23 @@ h1, h2, h3{
 
 .textBox{
 	display: block;
-	background-color: $white;
-	width: 80%;
 	border: 1px solid $black;
-	border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 20px;
+}
+
+.bigTextBox{
+	width: 80%;
+	background-color: $white;
+	border-radius: 10px;
 	padding: 8px;
+}
+
+.smallTextBox{
+	width: 40%;
+	background-color: $secondaryColour;
+	border-radius: 30px;
+	padding: 10px;
 }
 
 #introBox{
@@ -136,6 +145,8 @@ h1, h2, h3{
 		text-transform: uppercase;
 	}
 	.midIcons{
+	height: 200px;
+	width: 200px;
 	margin: 0 auto;
 	padding: 20px;
 	}
@@ -151,6 +162,7 @@ h1, h2, h3{
 	border-top: 1px solid $white;
 	clear: both;
 	margin: 0 auto;
+	background-color: #afafaf;
 	a{
 		text-decoration: none;
 		color: $black;
@@ -158,29 +170,34 @@ h1, h2, h3{
 }
 
 
+
 #facebookLink{
 	display: block;
 	margin: 0 auto;
-	width: 20%;
+	width: 10%;
 }
 
 
-@media only screen and (max-width: $mdWidth){
-	#otherSections{
-		display: none;
-	}
-	.midIcons{
-		width: 65%;
-	}
-}
+// @media only screen and (max-width: $mdWidth){
+// 	#otherSections{
+// 		display: none;
+// 	}
+// 	.midIcons{
+// 		width: 65%;
+// 	}
+// }
 
 @media only screen and (min-width: $mdWidth){
 	.headerContainer{
 		display: flex;
 		#logo{
-			padding: 5%x;
+			padding: 5%;
 			width: 10%;
-			background-color: white;
+			background-color: $white;
+			img{
+				display: block !important;
+			}
+			// NOT DISPLAYING LOGO AFTER 600 BREAK
 		}
 		#hamburger{
 			display: none;
@@ -213,6 +230,10 @@ h1, h2, h3{
 	p{
 		font-size: 1.25em;
 	}
+	#memberJoin, #downloadNews{
+	font-size: 1.2em;
+	}
+
 }
 
 

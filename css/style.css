@@ -282,13 +282,12 @@ img {
   text-align: center; }
 
 #newsImage {
-  height: 300px;
+  min-height: 274px;
   width: 100%;
   background-image: url("../images/ladyReading.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  text-align: center; }
+  background-position: center; }
 
 #headings {
   clear: both; }
@@ -309,13 +308,21 @@ h1, h2, h3 {
 
 .textBox {
   display: block;
-  background-color: #EDF5E1;
-  width: 80%;
   border: 1px solid #222629;
-  border-radius: 10px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 20px; }
+
+.bigTextBox {
+  width: 80%;
+  background-color: #EDF5E1;
+  border-radius: 10px;
   padding: 8px; }
+
+.smallTextBox {
+  width: 40%;
+  background-color: #86C232;
+  border-radius: 30px;
+  padding: 10px; }
 
 #introBox p {
   font-family: "Century Gothic";
@@ -329,6 +336,8 @@ h1, h2, h3 {
     color: #222629;
     text-transform: uppercase; }
   #middleSection .midIcons {
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
     padding: 20px; }
   #middleSection p {
@@ -338,7 +347,8 @@ h1, h2, h3 {
 .footerContainer {
   border-top: 1px solid #EDF5E1;
   clear: both;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #afafaf; }
   .footerContainer a {
     text-decoration: none;
     color: #222629; }
@@ -346,21 +356,17 @@ h1, h2, h3 {
 #facebookLink {
   display: block;
   margin: 0 auto;
-  width: 20%; }
+  width: 10%; }
 
-@media only screen and (max-width: 600px) {
-  #otherSections {
-    display: none; }
-
-  .midIcons {
-    width: 65%; } }
 @media only screen and (min-width: 600px) {
   .headerContainer {
     display: flex; }
     .headerContainer #logo {
-      padding: 5% x;
+      padding: 5%;
       width: 10%;
-      background-color: white; }
+      background-color: #EDF5E1; }
+      .headerContainer #logo img {
+        display: block !important; }
     .headerContainer #hamburger {
       display: none; }
     .headerContainer #links {
@@ -381,7 +387,10 @@ h1, h2, h3 {
     padding: 40px; }
 
   p {
-    font-size: 1.25em; } }
+    font-size: 1.25em; }
+
+  #memberJoin, #downloadNews {
+    font-size: 1.2em; } }
 @media only screen and (min-width: 1000px) {
   #topHeading {
     font-size: 8vw; }
