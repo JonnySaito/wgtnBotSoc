@@ -273,22 +273,20 @@ img {
           text-transform: uppercase;
           font-weight: bold; }
 
-#mainImage {
-  height: 300px;
+.heroImage {
   width: 100%;
-  background-image: url("../images/mainImage.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center; }
-
-#newsImage {
-  min-height: 274px;
-  width: 100%;
-  background-image: url("../images/ladyReading.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+
+#mainImage {
+  height: 300px;
+  background-image: url("../images/mainImage.jpg");
+  text-align: center; }
+
+#newsImage {
+  background-image: url("../images/ladyReading.jpg");
+  height: 400px; }
 
 #headings {
   clear: both; }
@@ -310,24 +308,28 @@ h1, h2, h3 {
 .textBox {
   display: block;
   margin: 0 auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding: 10px; }
 
 .bigTextBox {
-  width: 80%;
+  width: 90%;
   background-color: #EDF5E1;
-  border-radius: 10px;
-  padding: 10px; }
+  border-radius: 10px; }
 
 .smallTextBox {
-  width: 40%;
+  width: 44%;
   background-color: #7f8fa6;
-  border-radius: 30px;
-  padding: 10px; }
+  border-radius: 30px; }
 
-#introBox p {
+.introBox p {
   font-family: "Century Gothic";
   text-align: center;
   font-size: 1.25em; }
+
+.titleBox {
+  width: 60%;
+  background-color: #EDF5E1;
+  border-radius: 10px; }
 
 #middleSection {
   clear: both; }
@@ -348,6 +350,26 @@ h1, h2, h3 {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px; }
+
+.newsletterTable {
+  font-family: "Arial", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 30px 20px;
+  display: block; }
+  .newsletterTable td, .newsletterTable th {
+    border: 1px solid #ddd;
+    padding: 15px; }
+  .newsletterTable tr:nth-child(even) {
+    background-color: #f2f2f2; }
+  .newsletterTable tr:hover {
+    background-color: #ddd; }
+  .newsletterTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #EDF5E1; }
 
 .footerContainer {
   padding-top: 10px;
@@ -385,6 +407,9 @@ h1, h2, h3 {
 
   #mainImage {
     height: 500px; }
+
+  .titleBox h1 {
+    font-size: 3em; }
 
   #topHeading {
     font-size: 4em;
