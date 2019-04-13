@@ -67,7 +67,6 @@ img{
 	}
 }
 
-
 .heroImage{
 	width: 100%;
 	background-size: cover;
@@ -96,6 +95,15 @@ img{
 	height:400px;
 }
 
+#plantImage{
+	background-image: url("../images/cameraIdPlant.png");
+	height:400px;
+}
+
+#fieldImage{
+	background-image: url("../images/bushWalk.jpg");
+	height:400px;
+}
 
 #headings{
 	clear: both;
@@ -166,7 +174,6 @@ a{
 
 #middleSection{
 	clear: both;
-	// margin-bottom: 15px;
 	a{
 		text-transform: uppercase;
 	}
@@ -192,11 +199,11 @@ a{
 	@include clear;
 	width: 100%;
 	padding: 10px;
-	// display: inline-block;
 	text-align: center;
-	// flex-flow: row-wrap;
-	// justify-content: center;
-	// justify-content: space-around;
+}
+
+.tableBox{
+	display: inline-block;
 }
 
 .newsletterTable{
@@ -238,7 +245,6 @@ a{
 
 p.regularText{
 	font-family: $secondaryFont;
-	// text-align: center;
 	font-size: 1.2em;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -247,9 +253,10 @@ p.regularText{
 #memberRatesBox{
 	margin: 0 auto;
 	border: 1px solid;
+	border-radius: 20px;
 	padding: 30px 20px 30px 40px;
 	max-width: 360px;
-	background-color: #f7e954;
+	background-color: $yellow;
 }
 
 li{
@@ -290,6 +297,21 @@ iframe{
 	border: 0;
 }
 
+#uploadImage{
+	margin: 20px 40px;
+	padding: 20px;
+	border: 1px solid $black;
+	border-radius: 20px;
+	background-color: $yellow;
+}
+
+#plantInfoList{
+	margin: 20px 40px;
+}
+
+#daytripList{
+	margin: 20px 40px;
+}
 
 @media only screen and (min-width: $mdWidth){
 	.headerContainer{
@@ -377,6 +399,9 @@ iframe{
 			order: 2;
 			width: 9%;
 		}
+	}
+	#memberRatesBox li{
+		font-size: 1.5;
 	}
 }
 

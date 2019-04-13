@@ -4,11 +4,131 @@
 	<title>Identify Plants</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
-</head>
-<body>
-	
-	
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="images/wbsFavicon.ico">
+</head>
+<body> 
+
+	<header class="headerContainer">
+		<div id="logo">
+			<img src="images/wbsLogo.png">
+		</div>
+		<div id="hamburger">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div id="links">
+			<ul>
+				 <li class="active">
+				  	<a href="index.html">Home</a>
+				  </li> 
+				  <li>
+				  	<a href="wbsNewsletters.html">Newsletters</a>
+				  </li>
+				  <li>
+				  	<a href="wbsMeetings.html">Meetings</a>
+				  </li>
+				  <li>
+				  	<a href="wbsMembership.html">Membership</a>
+				  </li>
+				  <li>
+				  	<a href="wbsIdPlants.html">Identify Plants</a>
+				  </li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="heroImage" id="plantImage">	
+	</div>
+	
+	<div class="row textBox titleBox">
+		<h1 class="pageTitle">
+			 Identify plants
+		</h1>	
+	</div>
+
+  	<div class="row textBox bigTextBox introBox">
+      <p id="introText">
+        The Wellington Botanical Society is home to many seasoned botanical experts. If you've found a plant you'd like to identify, there's a good chance one of our members will be able to help. 
+      </p>  
+  	</div>
+  	<br/>
+  	<div class="row textBox bigTextBox">
+	 	<h1>Send us your photos</h1>
+	  	<br>
+	  	<h4>Upload here</h4>
+	  	<div id="uploadImage">
+	  		<img src="images/uploadHere.png" > 
+	 	</div>
+		<h4>Upload to Facebook</h4>
+		<p class="regularText">
+			Upload your photos to our unofficial Facebook page: <a href="https://www.facebook.com/groups/322939557873243/" target="_blank">Wild Plants of Wellington</a>. We’ll do our best to help identify your plant. 
+		</p>	
+		<br>
+		<h4>Mail</h4>
+	    <p class="regularText">
+	    	You can also send photographs or images to 
+	    	<br/>
+	    	<b>Wellington Botanical Society, PO Box 10 412, Wellington</b>. 
+	    	<br/>
+	    	We’ll scan them and share them on the Facebook page. 
+	    </p> 
+    </div>
+      
+	<div class="row textBox bigTextBox">
+	   	<h1>Information about the plant</h1>
+	   	<br/>
+		<p class="regularText">
+			For identification purposes, please provide the following information:
+		</p>
+		<div id="plantInfoList">
+			<ul>	
+				<li>
+					Visual description or image of leaves and flowers and approximate size
+				</li>
+				<li>
+					Height and size of the plant
+				</li>
+				<li>
+					Location of plant: the general area or a map reference
+				</li>
+				<li>
+					Approximate altitude
+				</li>
+				<li>
+					Type of area: for example, wetland, scree field, dense bush etc.
+				</li>
+				<li>
+					Other relevant information: for example, host plant
+				</li>
+			</ul>   
+		
+		</div>
+	</div>
+
+	<footer class="row footerContainer">		
+		<div class="textBox smallTextBox" id="downloadNews">
+			<a href="http://www.wellingtonbotsoc.org.nz/newsletters/WBS-news-1812.pdf" target="_blank">
+				<h2 id="dlNews">See latest newsletter</h2>
+			</a>
+		</div>
+		
+		<div class="textBox smallTextBox" id="memberJoin">
+			<a href="wbsMembership.html">
+				<h2 id="memberCall">Become a member</h2>
+			</a>
+		</div>
+		<br>
+		<div id="facebookLink">
+			<a href="https://www.facebook.com/groups/322939557873243/" target="_blank">
+				<img src="images/facebookLogo.png" id="facebookLogo" alt="facebook logo">
+			</a>
+		</div>		
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

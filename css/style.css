@@ -451,7 +451,7 @@ img {
   font-weight: bold;
 }
 
-/* line 71, ../scss/style.scss */
+/* line 70, ../scss/style.scss */
 .heroImage {
   width: 100%;
   background-size: cover;
@@ -459,43 +459,55 @@ img {
   background-position: center;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 #mainImage {
   height: 300px;
   background-image: url("../images/mainImage.jpg");
   text-align: center;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 #newsImage {
   background-image: url("../images/ladyReading.jpg");
   height: 400px;
 }
 
-/* line 89, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 #meetingImage {
   background-image: url("../images/meeting.png");
   height: 400px;
 }
 
-/* line 94, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 #joinImage {
   background-image: url("../images/manaJoin.png");
   height: 400px;
 }
 
-/* line 100, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
+#plantImage {
+  background-image: url("../images/cameraIdPlant.png");
+  height: 400px;
+}
+
+/* line 103, ../scss/style.scss */
+#fieldImage {
+  background-image: url("../images/bushWalk.jpg");
+  height: 400px;
+}
+
+/* line 108, ../scss/style.scss */
 #headings {
   clear: both;
 }
 
-/* line 105, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 h1, h2, h3 {
   font-family: "Century Gothic";
   text-align: center;
 }
 
-/* line 110, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 h4 {
   font-family: "Arial";
   font-size: 1.2em;
@@ -503,21 +515,21 @@ h4 {
   padding: 10px;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 #topHeading {
   font-size: 2.5em;
   color: #EDF5E1;
   padding: 20px;
 }
 
-/* line 123, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 #subHeading {
   font-size: 1em;
   color: #EDF5E1;
   padding: 20px;
 }
 
-/* line 129, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .textBox {
   display: block;
   margin: 0 auto;
@@ -525,60 +537,60 @@ h4 {
   padding: 10px;
 }
 
-/* line 136, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .bigTextBox {
   width: 90%;
   background-color: #EDF5E1;
   border-radius: 10px;
 }
 
-/* line 142, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .smallTextBox {
   width: 44%;
   background-color: #7f8fa6;
   border-radius: 30px;
 }
 
-/* line 149, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 .introBox p {
   font-family: "Century Gothic";
   text-align: center;
   font-size: 1.25em;
 }
 
-/* line 156, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .titleBox {
   width: 60%;
   background-color: #EDF5E1;
   border-radius: 10px;
 }
 
-/* line 162, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #222629;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 #middleSection {
   clear: both;
 }
-/* line 170, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 #middleSection a {
   text-transform: uppercase;
 }
-/* line 173, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 #middleSection .midSection {
   padding-bottom: 20px;
 }
-/* line 176, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 #middleSection .midIcons {
   height: 100px;
   width: 100px;
   margin: 0 auto;
   padding: 10px;
 }
-/* line 182, ../scss/style.scss */
+/* line 189, ../scss/style.scss */
 #middleSection p {
   display: none;
   font-family: "Arial";
@@ -587,7 +599,7 @@ a {
   padding-right: 10px;
 }
 
-/* line 191, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .newsletterBox {
   width: 100%;
   padding: 10px;
@@ -600,7 +612,12 @@ a {
   display: block;
 }
 
-/* line 202, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
+.tableBox {
+  display: inline-block;
+}
+
+/* line 209, ../scss/style.scss */
 .newsletterTable {
   font-family: "Arial", sans-serif;
   border-collapse: collapse;
@@ -608,29 +625,29 @@ a {
   padding: 30px 20px;
   display: inline;
 }
-/* line 208, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 .newsletterTable td, .newsletterTable th {
   border: 1px solid #ddd;
   padding: 15px;
 }
-/* line 211, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .newsletterTable td a, .newsletterTable th a {
   text-decoration: none;
   color: inherit;
 }
-/* line 213, ../scss/style.scss */
+/* line 220, ../scss/style.scss */
 .newsletterTable td a:visited, .newsletterTable th a:visited {
   color: #b7b7b7;
 }
-/* line 218, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 .newsletterTable tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-/* line 221, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .newsletterTable tr:hover {
   background-color: #86C232;
 }
-/* line 224, ../scss/style.scss */
+/* line 231, ../scss/style.scss */
 .newsletterTable th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -640,13 +657,13 @@ a {
   color: #EDF5E1;
 }
 
-/* line 234, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .regularText {
   font-family: "Arial";
   font-size: 1.2em;
 }
 
-/* line 239, ../scss/style.scss */
+/* line 246, ../scss/style.scss */
 p.regularText {
   font-family: "Arial";
   font-size: 1.2em;
@@ -654,22 +671,23 @@ p.regularText {
   padding-right: 10px;
 }
 
-/* line 247, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 #memberRatesBox {
   margin: 0 auto;
   border: 1px solid;
+  border-radius: 20px;
   padding: 30px 20px 30px 40px;
   max-width: 360px;
   background-color: #f7e954;
 }
 
-/* line 255, ../scss/style.scss */
+/* line 262, ../scss/style.scss */
 li {
   font-family: "Arial";
   font-size: 1.2em;
 }
 
-/* line 260, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 .footerContainer {
   padding-top: 10px;
   clear: both;
@@ -677,19 +695,19 @@ li {
   background-color: #E0E0E0;
   padding-bottom: 20px;
 }
-/* line 266, ../scss/style.scss */
+/* line 273, ../scss/style.scss */
 .footerContainer a {
   text-decoration: none;
   color: #EDF5E1;
 }
-/* line 270, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .footerContainer #facebookLink {
   display: block;
   margin: 0 auto;
   width: 12%;
 }
 
-/* line 277, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .gmapCanvas {
   display: flex;
   justify-content: center;
@@ -700,133 +718,157 @@ li {
   padding: 10px;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 294, ../scss/style.scss */
 iframe {
   width: 60%;
   height: 100%;
   border: 0;
 }
 
+/* line 300, ../scss/style.scss */
+#uploadImage {
+  margin: 20px 40px;
+  padding: 20px;
+  border: 1px solid #222629;
+  border-radius: 20px;
+  background-color: #f7e954;
+}
+
+/* line 308, ../scss/style.scss */
+#plantInfoList {
+  margin: 20px 40px;
+}
+
+/* line 312, ../scss/style.scss */
+#daytripList {
+  margin: 20px 40px;
+}
+
 @media only screen and (min-width: 600px) {
-  /* line 295, ../scss/style.scss */
+  /* line 317, ../scss/style.scss */
   .headerContainer {
     display: flex;
   }
-  /* line 297, ../scss/style.scss */
+  /* line 319, ../scss/style.scss */
   .headerContainer #logo {
     width: 10%;
   }
-  /* line 299, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .headerContainer #logo img {
     display: block !important;
   }
-  /* line 303, ../scss/style.scss */
+  /* line 325, ../scss/style.scss */
   .headerContainer #hamburger {
     display: none;
   }
-  /* line 306, ../scss/style.scss */
+  /* line 328, ../scss/style.scss */
   .headerContainer #links {
     display: block !important;
     width: 85%;
   }
-  /* line 309, ../scss/style.scss */
+  /* line 331, ../scss/style.scss */
   .headerContainer #links ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
   }
-  /* line 316, ../scss/style.scss */
+  /* line 338, ../scss/style.scss */
   .headerContainer #links ul li:hover a {
     color: white;
   }
 
-  /* line 325, ../scss/style.scss */
+  /* line 347, ../scss/style.scss */
   #mainImage {
     height: 500px;
   }
 
-  /* line 330, ../scss/style.scss */
+  /* line 352, ../scss/style.scss */
   .titleBox h1 {
     font-size: 3em;
   }
 
-  /* line 335, ../scss/style.scss */
+  /* line 357, ../scss/style.scss */
   #topHeading {
     font-size: 4em;
     padding: 40px;
   }
 
-  /* line 339, ../scss/style.scss */
+  /* line 361, ../scss/style.scss */
   #subHeading {
     font-size: 1.5em;
     padding: 40px;
   }
 
-  /* line 344, ../scss/style.scss */
+  /* line 366, ../scss/style.scss */
   #memberJoin, #downloadNews {
     font-size: 1.2em;
   }
 
-  /* line 349, ../scss/style.scss */
+  /* line 371, ../scss/style.scss */
   #introBox p {
     font-weight: bold;
   }
 
-  /* line 354, ../scss/style.scss */
+  /* line 376, ../scss/style.scss */
   #middleSection p {
     display: block;
   }
 
-  /* line 358, ../scss/style.scss */
+  /* line 380, ../scss/style.scss */
   iframe {
     width: 70%;
     height: 300px;
   }
 
-  /* line 363, ../scss/style.scss */
+  /* line 385, ../scss/style.scss */
   .footerContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  /* line 368, ../scss/style.scss */
+  /* line 390, ../scss/style.scss */
   .footerContainer #downloadNews {
     order: 1;
   }
-  /* line 371, ../scss/style.scss */
+  /* line 393, ../scss/style.scss */
   .footerContainer #memberJoin {
     align-items: center;
     order: 3;
   }
-  /* line 375, ../scss/style.scss */
+  /* line 397, ../scss/style.scss */
   .footerContainer #facebookLink {
     padding-top: 10px;
     order: 2;
     width: 9%;
   }
+
+  /* line 403, ../scss/style.scss */
+  #memberRatesBox li {
+    font-size: 1.5;
+  }
 }
 @media only screen and (min-width: 1000px) {
-  /* line 385, ../scss/style.scss */
+  /* line 410, ../scss/style.scss */
   #topHeading {
     font-size: 6em;
     padding: 40px;
   }
 
-  /* line 389, ../scss/style.scss */
+  /* line 414, ../scss/style.scss */
   #subHeading {
     font-size: 2em;
     padding: 40px;
   }
 
-  /* line 393, ../scss/style.scss */
+  /* line 418, ../scss/style.scss */
   #facebookLink {
     padding-top: 12px;
     width: 7%;
   }
 
-  /* line 397, ../scss/style.scss */
+  /* line 422, ../scss/style.scss */
   iframe {
     height: 500px;
   }
