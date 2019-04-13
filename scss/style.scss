@@ -86,6 +86,17 @@ img{
 	height:400px;
 }
 
+#meetingImage{
+	background-image: url("../images/meeting.png");
+	height:400px;
+}
+
+#joinImage{
+	background-image: url("../images/manaJoin.png");
+	height:400px;
+}
+
+
 #headings{
 	clear: both;
 }
@@ -94,6 +105,13 @@ img{
 h1, h2, h3{
 	font-family: $primaryFont;
 	text-align: center;
+}
+
+h4{
+	font-family: $secondaryFont;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
 }
 
 #topHeading{
@@ -141,12 +159,15 @@ h1, h2, h3{
 	border-radius: 10px;
 }
 
+a{
+	text-decoration: none;
+	color: $black;
+}
+
 #middleSection{
 	clear: both;
 	// margin-bottom: 15px;
 	a{
-		text-decoration: none;
-		color: $black;
 		text-transform: uppercase;
 	}
 	.midSection{
@@ -167,32 +188,74 @@ h1, h2, h3{
 	}
 }
 
+.newsletterBox{
+	@include clear;
+	width: 100%;
+	padding: 10px;
+	// display: inline-block;
+	text-align: center;
+	// flex-flow: row-wrap;
+	// justify-content: center;
+	// justify-content: space-around;
+}
+
 .newsletterTable{
 	font-family: $secondaryFont, sans-serif;
-	// font-size: 1.2em;
 	border-collapse: collapse;
 	width: 100%;
 	padding: 30px 20px;
-	display: block;
+	display: inline;
 	td,th {
 		border: 1px solid #ddd;
 		padding: 15px;
+		a {text-decoration: none;
+			color: inherit;
+			&:visited{
+			color: #b7b7b7;
+			}
+		}
 	}
 	tr:nth-child(even){
 		background-color: #f2f2f2;
 	}
 	tr:hover{
-		background-color: #ddd;
+		background-color: $secondaryColour;
 	}
 	th{
 	  padding-top: 12px;
 	  padding-bottom: 12px;
 	  text-align: center;
-	  background-color: #4CAF50;
+	  background-color: $black;
+	  font-family: $primaryFont;
 	  color: $white;
 	}
 }
 
+.regularText{
+	font-family: $secondaryFont;
+	font-size: 1.2em;
+}
+
+p.regularText{
+	font-family: $secondaryFont;
+	// text-align: center;
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#memberRatesBox{
+	margin: 0 auto;
+	border: 1px solid;
+	padding: 30px 20px 30px 40px;
+	max-width: 360px;
+	background-color: #f7e954;
+}
+
+li{
+	font-family: $secondaryFont;
+	font-size: 1.2em;
+}
 
 .footerContainer{
 	padding-top: 10px;
@@ -211,7 +274,21 @@ h1, h2, h3{
 	}
 }
 
+.gmapCanvas{
+	display: flex;
+	justify-content: center;
+	overflow:hidden;
+	background:none!important;
+	height:100%;
+	width:100%;
+	padding: 10px;
+}
 
+iframe{
+	width: 60%;
+	height: 100%;
+	border: 0;
+}
 
 
 @media only screen and (min-width: $mdWidth){
@@ -278,6 +355,11 @@ h1, h2, h3{
 		display: block;
 	}
 
+	iframe{
+		width: 70%;
+		height: 300px;
+	}
+
 	.footerContainer{
 		display: flex;
 		flex-direction: row;
@@ -312,6 +394,9 @@ h1, h2, h3{
 			padding-top: 12px;
 			width: 7%;
 		}
+	iframe{
+		height: 500px;
+	}	
 }
 
 
