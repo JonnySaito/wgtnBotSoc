@@ -11,7 +11,7 @@
     &:after{
         clear: both;
         content: "";
-        display: block;
+        display: block; 
     }
 }
 
@@ -74,43 +74,40 @@ img{
 	background-position: center;
 }
 
-#mainImage{
-	height: 300px;
+.mainImageHeight{
+	height: 400px;
+}
+
+.mainImage{
 	background-image: url("../images/mainImage.jpg");
 	text-align: center;
 }
 
-#newsImage{
+.newsImage{
 	background-image: url("../images/ladyReading.jpg");
-	height:400px;
 }
 
-#meetingImage{
+.meetingImage{
 	background-image: url("../images/meeting.png");
-	height:400px;
 }
 
-#joinImage{
+.joinImage{
 	background-image: url("../images/manaJoin.png");
-	height:400px;
 }
 
-#plantImage{
+.plantImage{
 	background-image: url("../images/cameraIdPlant.png");
-	height:400px;
 }
 
-#fieldImage{
+.fieldImage{
 	background-image: url("../images/bushWalk.jpg");
-	height:400px;
 }
 
-#moreImage{
+.moreImage{
 	background-image: url("../images/rareplant.png");
-	height: 400px; 
 }
 
-#headings{
+.headings{
 	clear: both;
 }
 
@@ -127,14 +124,15 @@ h4{
 	padding: 10px;
 }
 
-#topHeading{
+.topHeading{
 	font-size: 2.5em;
-	color: $white;
-	padding: 20px;
 }
 
-#subHeading{
-	font-size: 1em;
+.subHeading{
+	font-size: 1.5em;
+}
+
+.headingStyle{
 	color: $white;
 	padding: 20px;
 }
@@ -148,13 +146,19 @@ h4{
 
 .bigTextBox{
 	width: 90%;
-	background-color: $white;
 	border-radius: 10px;
 }
 
-.smallTextBox{
-	width: 44%;
+.whiteBox{
+	background-color: $white;
+}
+
+.greyBox{
 	background-color: #7f8fa6;
+}
+
+.smallTextBox{
+	width: 40%;
 	border-radius: 30px;
 }
 
@@ -181,7 +185,7 @@ a{
 	color: $secondaryColour;
 }
 
-#middleSection{
+.middleSection{
 	clear: both;
 	a{
 		text-transform: uppercase;
@@ -234,7 +238,7 @@ a{
 	tr:nth-child(even){
 		background-color: #f2f2f2;
 	}
-	tr:hover{
+	td:hover{
 		background-color: $secondaryColour;
 	}
 	th{
@@ -259,7 +263,7 @@ p.regularText{
 	padding-right: 10px;
 }
 
-#memberRatesBox{
+.memberRatesBox{
 	margin: 0 auto;
 	border: 1px solid;
 	border-radius: 20px;
@@ -283,7 +287,7 @@ li{
 		text-decoration: none;
 		color: $white;
 	}
-	#facebookLink{
+	.facebookLink{
 		display: block;
 		margin: 0 auto;
 		width: 12%;
@@ -352,8 +356,10 @@ iframe{
 			}
 		}
 	}
-
-	#mainImage{
+	h2{
+		font-size: 2em;
+	}
+	.mainImage{
 		height: 500px;
 		}
 
@@ -363,26 +369,26 @@ iframe{
 		}
 	}
 
-	#topHeading{
+	.topHeading{
 		font-size: 4em;
 		padding: 40px;
 	}
-	#subHeading{
-		font-size: 1.5em;
+	.subHeading{
+		font-size: 2em;
 		padding: 40px;
 	}
 	
-	#memberJoin, #downloadNews{
+	.memberJoin, .downloadNews{
 	font-size: 1.2em;
 	}
 	
-	#introBox{
+	.introBox{
 		p{
 		font-weight: bold;
 		}
 	}
 
-	#middleSection p{
+	.middleSection p{
 		display: block;
 	}
 
@@ -396,14 +402,14 @@ iframe{
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		#downloadNews{
+		.downloadNews{
 			order:1;
 		}
-		#memberJoin{
+		.memberJoin{
 			align-items: center;
 			order:3;
 		}
-		#facebookLink{
+		.facebookLink{
 			padding-top: 10px;
 			order: 2;
 			width: 9%;
@@ -416,15 +422,15 @@ iframe{
 
 
 @media only screen and (min-width: $lgWidth){
-	#topHeading{
+	.topHeading{
 		font-size: 6em;
 		padding: 40px;
 	}
-	#subHeading{
+	.subHeading{
 		font-size: 2em;
 		padding: 40px;
 	}
-	#facebookLink{
+	.facebookLink{
 			padding-top: 12px;
 			width: 7%;
 		}
