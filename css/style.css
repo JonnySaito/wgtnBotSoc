@@ -470,12 +470,29 @@ iframe {
   height: 100%;
   border: 0; }
 
-#uploadImage {
+.uploadImage {
   margin: 20px 40px;
   padding: 20px;
   border: 1px solid #222629;
   border-radius: 20px;
-  background-color: #f7e954; }
+  background-color: #f7e954;
+  text-align: center; }
+
+.uploadIcon {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px; }
+
+.uploadButton {
+  background-color: #86C232;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }
 
 #plantInfoList {
   margin: 20px 40px; }
