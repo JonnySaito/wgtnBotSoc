@@ -343,6 +343,12 @@ h4 {
 .greyBox {
   background-color: #7f8fa6; }
 
+.yellowBox {
+  background-color: #f7e954; }
+
+.primaryBox {
+  background-color: #E0E0E0; }
+
 .smallTextBox {
   width: 40%;
   border-radius: 30px; }
@@ -430,13 +436,17 @@ p.regularText {
   padding-left: 10px;
   padding-right: 10px; }
 
-.memberRatesBox {
+.mediumBox {
   margin: 0 auto;
   border: 1px solid;
   border-radius: 20px;
-  padding: 30px 20px 30px 40px;
-  max-width: 360px;
-  background-color: #f7e954; }
+  max-width: 360px; }
+
+.memberRatesBox {
+  padding: 30px 20px 30px 80px; }
+
+.uploadBox {
+  padding: 30px 20px 30px 40px; }
 
 li {
   font-family: "Arial";
@@ -471,7 +481,7 @@ iframe {
   border: 0; }
 
 .uploadImage {
-  margin: 20px 40px;
+  margin: 20px 100px;
   padding: 20px;
   border: 1px solid #222629;
   border-radius: 20px;
@@ -483,16 +493,6 @@ iframe {
   width: 100px;
   margin: 0 auto;
   padding: 10px; }
-
-.uploadButton {
-  background-color: #86C232;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; }
 
 #plantInfoList {
   margin: 20px 40px; }
